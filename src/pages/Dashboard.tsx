@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { collection, onSnapshot } from 'firebase/firestore';
 import { db } from '../services/firebase';
-import { Classroom, ClassSession, Teacher } from '../types';
+import type { Classroom, ClassSession, Teacher } from '../types';
 import { Clock, User } from 'lucide-react';
 
 export const Dashboard: React.FC = () => {
@@ -112,8 +112,8 @@ export const Dashboard: React.FC = () => {
                                         <div
                                             key={c.id}
                                             className={`relative rounded-xl border p-5 transition-all duration-300 hover:shadow-md ${isAvailable
-                                                    ? 'bg-green-50 border-green-200'
-                                                    : 'bg-red-50 border-red-200'
+                                                ? 'bg-green-50 border-green-200'
+                                                : 'bg-red-50 border-red-200'
                                                 }`}
                                         >
                                             <div className="flex justify-between items-start mb-4">

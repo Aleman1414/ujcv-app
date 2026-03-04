@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { ClassSession, Teacher, Classroom } from '../../types';
+import type { ClassSession, Teacher, Classroom } from '../../types';
 import { getClasses, addClass, updateClass, deleteClass, getTeachers, getClassrooms } from '../../services/db';
 import { Plus, Edit2, Trash2, X } from 'lucide-react';
 
@@ -283,8 +283,8 @@ export const Schedules: React.FC = () => {
                                                         type="button"
                                                         onClick={() => handleDayToggle(day.id)}
                                                         className={`px-3 py-1 text-sm rounded-full border ${days.includes(day.id)
-                                                                ? 'bg-primary-600 text-white border-primary-600'
-                                                                : 'bg-white text-gray-600 border-gray-300 hover:bg-gray-50'
+                                                            ? 'bg-primary-600 text-white border-primary-600'
+                                                            : 'bg-white text-gray-600 border-gray-300 hover:bg-gray-50'
                                                             }`}
                                                     >
                                                         {day.name}

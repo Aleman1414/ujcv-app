@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useAuth } from '../../hooks/useAuth';
-import { ClassSession, Classroom } from '../../types';
+import type { ClassSession, Classroom } from '../../types';
 import { getClasses, getClassrooms } from '../../services/db';
 
 export const MySchedule: React.FC = () => {

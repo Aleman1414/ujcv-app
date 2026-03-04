@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Classroom, ClassroomType, ClassroomStatus } from '../../types';
+import type { Classroom, ClassroomType } from '../../types';
 import { getClassrooms, addClassroom, updateClassroom, deleteClassroom } from '../../services/db';
 import { Plus, Edit2, Trash2, X } from 'lucide-react';
 

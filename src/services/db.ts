@@ -1,6 +1,6 @@
-import { collection, doc, getDocs, setDoc, updateDoc, deleteDoc, getDoc } from 'firebase/firestore';
+import { collection, doc, getDocs, setDoc, updateDoc, deleteDoc } from 'firebase/firestore';
 import { db } from './firebase';
-import { Classroom, Teacher, ClassSession } from '../types';
+import type { Classroom, Teacher, ClassSession } from '../types';
 
 // --- CLASSROOMS ---
 export const getClassrooms = async (): Promise<Classroom[]> => {
