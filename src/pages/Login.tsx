@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { signInWithEmailAndPassword, signInWithPopup } from 'firebase/auth';
 import { auth, googleProvider } from '../services/firebase';
-import { GraduationCap, Mail, Lock, LogIn } from 'lucide-react';
+import { Mail, Lock, LogIn } from 'lucide-react';
 
 export const Login: React.FC = () => {
     const [email, setEmail] = useState('');
@@ -46,8 +46,8 @@ export const Login: React.FC = () => {
         <div className="min-h-screen flex items-center justify-center bg-gray-100 p-4">
             <div className="max-w-md w-full bg-white rounded-2xl shadow-xl overflow-hidden">
                 <div className="bg-primary-800 pt-10 pb-8 px-6 text-center text-white">
-                    <div className="mx-auto w-16 h-16 bg-white rounded-full flex items-center justify-center mb-4 shadow-md">
-                        <GraduationCap className="w-10 h-10 text-primary-800" />
+                    <div className="mx-auto w-24 h-24 bg-white rounded-full flex items-center justify-center mb-4 shadow-md overflow-hidden p-2">
+                        <img src="/logo.png" alt="Logo UJCV" className="w-full h-full object-contain" />
                     </div>
                     <h2 className="text-2xl font-bold tracking-wide">UJCV</h2>
                     <p className="text-primary-200 mt-1">SISTEMA DE CONTROL ACADÉMICO</p>
